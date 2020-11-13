@@ -1,8 +1,7 @@
 import React from "react";
 
-import tshirtImage from "../../assets/tshirt.png";
 import ProductAction from "../ProductAction";
-import SellerInfo from "../SellerInfo";
+import paoItaliano from "../../assets/pao-Italiano.jpg";
 
 import {
   Container,
@@ -19,13 +18,13 @@ const Product: React.FC = () => {
     <Container>
       <Row>
         <a href="#">Compartilhar</a>
-        <a href="#">Vender um igual</a>
+        <a href="#">Carrinho</a>
       </Row>
 
       <Panel>
         <Column>
           <Gallery>
-            <img alt="T-Shirt" src={tshirtImage} />
+            <img alt="T-Shirt" src={paoItaliano} />
           </Gallery>
 
           <Info />
@@ -33,11 +32,6 @@ const Product: React.FC = () => {
 
         <Column>
           <ProductAction />
-          <SellerInfo />
-
-          <WarrantySection />
-          <WarrantySection />
-          <WarrantySection />
         </Column>
       </Panel>
     </Container>
@@ -70,41 +64,42 @@ const Info = () => (
     <h2>Descrição</h2>
 
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et dolor
-      bibendum diam ullamcorper bibendum vitae a ex. Ut in ipsum lacus. Nullam
-      dictum nisi sem, sed sagittis arcu ultricies ut. Mauris sodales nisl
-      velit. Mauris quis velit at urna bibendum viverra. Pellentesque sodales
-      laoreet nunc, et blandit libero lobortis eget. Pellentesque pellentesque
-      sed mauris dictum porttitor.
+      Pão de origem européia de longa fermentação, propiciando casca rústica, miolo alveolado  e sabor característico.
       <br />
       <br />
-      Itens inclusos: <br />
-      - 1x LED <br />
-      - 1x LED <br />
-      - 1x LED <br />
-      - 1x LED <br />
-      - 1x LED <br />
+      <h4>Validade</h4>
+      8 meses<br />
       <br />
-      Etiam semper a dui ac lacinia. Curabitur at nisi ut urna aliquet
-      venenatis. Nullam eget leo nec lectus euismod finibus vel in enim. Vivamus
-      sollicitudin nisi est, cursus rhoncus orci finibus in. Cras volutpat
-      sodales neque. Vestibulum ante ipsum primis in faucibus orci luctus et
-      ultrices posuere cubilia curae; Donec imperdiet lorem a efficitur viverra.
-      Donec consectetur orci id ex sollicitudin vulputate. Nulla eget sapien
-      tortor. Aenean iaculis pellentesque felis, facilisis molestie risus mollis
-      non. Proin tempus, nunc non pulvinar tristique, ligula risus porta odio,
-      non pulvinar elit nisi vitae velit. Morbi vulputate dolor eu tortor
-      iaculis ultricies. Aliquam accumsan aliquam cursus. Curabitur id egestas
-      dolor. Ut sed nulla vestibulum, condimentum lacus a, semper augue.
-      Vestibulum sagittis dui ut lorem scelerisque rhoncus. In id facilisis leo.
-      Sed porttitor faucibus fringilla. Aenean eget mi vitae est convallis
-      pretium eget sed quam. Phasellus purus magna, consequat id laoreet in,
-      blandit quis eros. Integer fringilla justo nisi, vitae vulputate erat
-      finibus et. Duis lacinia ultrices purus. Curabitur ipsum purus, lacinia ut
-      nisl nec, rutrum tristique ipsum. Duis luctus est sem, a laoreet quam
-      scelerisque eget. Phasellus justo ex, pellentesque et dignissim nec,
-      malesuada at justo. Cras porta vel lacus in ultricies. Curabitur id tempus
-      tellus. Pellentesque hendrerit massa sit amet vulputate varius.
+      <h4>Ingredientes</h4> <br />
+      Farinha de trigo especial enriquecida com ferro e ácido fólico, amido modificado, sal refinado, gordura vegetal, ácido acético, soro de leite, amido pré gelatinizado, extrato de malte, estabilizante estearoil-2-lactil lactato de sódio, polisorbato, emulsificante poliglicerol de ácido ricinoleico, melhoradores de farinha ácido ascórbico e enzima alfa amilase.	 CONTÉM GLÚTEN. CONTÉM LACTOSE.<br/>
+
+
+      <h4>Indicação de uso</h4> <br />
+Produto indicado para o preparo de pão italiano
+<br />
+1) Colocar na masseira 1kg de mistura, 500ml de água gelada e por último, acrescentar 30g de fermento biológico fresco;
+<br />
+2) Misturar tudo até obter uma massa lisa e homogênea ou até ponto de véu;
+<br />
+3) Cortar no tamanho desejado;
+<br />
+4) Bolear, dando três descansos de 40 minutos (total de descanso 1h e 20min). Bolear a cada intervalo de 40 minutos;
+<br />
+5) Assar a 180ºC por 35 a 40 minutos, com vapor.
+
+<br />
+<br />
+
+OBSERVAÇÕES
+<br />
+1) O tempo de amassamento pode variar em função de cada masseira. É importante bater a massa até seu completo desenvolvimento ou ponto de véu;
+<br />
+2) Temperatura recomendada para a massa durante mistura: 26°C a 30°C. Utilizar água gelada no preparo;
+<br />
+3) Os volumes de água a utilizar podem variar de acordo com consistência desejada;
+<br />
+
+Opção: para 24 h de descanso colocar 20g de fermento e colocar na câmara fria.
     </p>
   </Description>
 );
